@@ -1,0 +1,1112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation=".wmqi21.mxsd"/>
+  <xsd:complexType name="LAWMATCHINV61_TYPE">
+    <xsd:annotation>
+      <xsd:documentation source="WMQI_DOCUMENTATION">LAWMATCHINV61_TYPE.\s</xsd:documentation>
+      <xsd:appinfo source="WMQI_APPINFO">
+        <MRComplexType composition="unorderedSet" content="open"/>
+      </xsd:appinfo>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_SLAP" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_SLAP.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="64"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_TYPE" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_TYPE.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="3"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_COMPANY" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_COMPANY.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="4"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_VENDOR" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_VENDOR.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="9"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_INVOICE" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_INVOICE.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="22"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_SUFFIX" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_SUFFIX.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="3"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_PO_NUMBER" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_PO_NUMBER.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="14"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_PO_RELEASE" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_PO_RELEASE.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="4"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_PO_CODE" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_PO_CODE.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="4"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_LINE_NBR" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_LINE_NBR.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="6"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_AOC_CODE" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_AOC_CODE.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="2"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_SEQ_NBR" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_SEQ_NBR.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="4"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_ITEM_TYPE" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_ITEM_TYPE.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="1"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_ITEM" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_ITEM.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="32"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_VEN_ITEM" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_VEN_ITEM.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="32"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_MATCHED_QTY" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_MATCHED_QTY.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="13"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_MATCHED_QTY_SIGN" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_MATCHED_QTY_SIGN.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="1"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_MATCH_UNIT_CST" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_MATCH_UNIT_CST.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="13"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_MATCH_UNIT_CST_SIGN" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_MATCH_UNIT_CST_SIGN.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="1"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_VPRI_UOM" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_VPRI_UOM.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="4"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_VPRI_UOM_MULT" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_VPRI_UOM_MULT.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="13"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_VPRI_UOM_MULT_SIGN" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_VPRI_UOM_MULT_SIGN.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="1"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_ENTERED_QTY" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_ENTERED_QTY.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="13"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_ENTERED_QTY_SIGN" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_ENTERED_QTY_SIGN.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="1"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_ENT_UNIT_CST" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_ENT_UNIT_CST.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="13"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_ENT_UNIT_CST_SIGN" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_ENT_UNIT_CST_SIGN.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="1"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_TAX_CODE" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_TAX_CODE.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="10"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_TAX_TYPE" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_TAX_TYPE.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="1"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_TAX_AMOUNT" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_TAX_AMOUNT.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="13"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_TAX_AMOUNT_SIGN" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_TAX_AMOUNT_SIGN.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="1"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_VBUY_MATCH_QTY" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_VBUY_MATCH_QTY.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="13"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_VBUY_MATCH_QTY_SIGN" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_VBUY_MATCH_QTY_SIGN.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="1"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_VBUY_UOM" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_VBUY_UOM.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="4"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_VBUY_UOM_MULT" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_VBUY_UOM_MULT.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="13"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="0" name="MIR_VBUY_UOM_MULT_SIGN" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_VBUY_UOM_MULT_SIGN.\s</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="1"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_NO_TAX_FLAG" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_NO_TAX_FLAG.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="1"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_MATCH_CLASS" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_MATCH_CLASS.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="10"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_MATCH_DTL_KEY" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_MATCH_DTL_KEY.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="55"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_RTL_UNIT_COST" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_RTL_UNIT_COST.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="13"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_RTL_UNIT_COST_SIGN" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_RTL_UNIT_COST_SIGN.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="1"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_LOCATION" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_LOCATION.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="5"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_MATCH_OBJ_ID" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_MATCH_OBJ_ID.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="12"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_ENT_UOM" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_ENT_UOM.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="4"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_ENT_UOM_MULT" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_ENT_UOM_MULT.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="13"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_ENT_UOM_MULT_SIGN" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_ENT_UOM_MULT_SIGN.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="1"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_TRAN_ND" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_TRAN_ND.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="1"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_REC_SOURCE" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_REC_SOURCE.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="2"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_TOT_DIST_AMT" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_TOT_DIST_AMT.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="15"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_TOT_DIST_AMT_SIGN" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_TOT_DIST_AMT_SIGN.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="1"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_TOT_BASE_AMT" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_TOT_BASE_AMT.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="15"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_TOT_BASE_AMT_SIGN" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_TOT_BASE_AMT_SIGN.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="1"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_STATUS" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_STATUS.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="1"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_API_OBJ_ID" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_API_OBJ_ID.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="12"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_MA_REC_NBR_PREFIX" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_MA_REC_NBR_PREFIX.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="2"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_MA_REC_NBR" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_MA_REC_NBR.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="8"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_MA_LINE_NBR" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_MA_LINE_NBR.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="6"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_MATCH_SEQ_NBR" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_MATCH_SEQ_NBR.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="4"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_MTCH_EXC_PROC" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_MTCH_EXC_PROC.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="1"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_INVOICE_TYPE" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_INVOICE_TYPE.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="1"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_DISTRIB_DATE" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_DISTRIB_DATE.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="8"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_UPDATE_DATE" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_UPDATE_DATE.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="8"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_UPDATE_TIME" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_UPDATE_TIME.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="6"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_TAX_USAGE_CD" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_TAX_USAGE_CD.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="10"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_LAST_MSG_SEQ" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_LAST_MSG_SEQ.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="6"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_ICN_CODE" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_ICN_CODE.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="8"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_SUPLMNTARY_QTY" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_SUPLMNTARY_QTY.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="13"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_SUPLMNTARY_QTY_SIGN" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_SUPLMNTARY_QTY_SIGN.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="1"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_SUPLMNTARY_UOM" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_SUPLMNTARY_UOM.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="4"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_WEIGHT" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_WEIGHT.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="9"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_WEIGHT_SIGN" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_WEIGHT_SIGN.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="1"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_PROCESS_LEVEL" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_PROCESS_LEVEL.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="5"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_FILLER" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_FILLER.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="400"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="MIR_SPLAT" nillable="false">
+        <xsd:annotation>
+          <xsd:documentation source="WMQI_DOCUMENTATION">MIR_SPLAT.\s</xsd:documentation>
+          <xsd:appinfo source="WMQI_APPINFO">
+            <cwfInclRep messageSetDefaultRep="CWF">
+              <cwfSimpleRep mrLengthEncoding="fixedLength" paddingCharacter="SPACE" typeName="MRCWFStringRep"/>
+            </cwfInclRep>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="1"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="LAWMATCHINV61_MESSAGE" type="LAWMATCHINV61_TYPE">
+    <xsd:annotation>
+      <xsd:documentation source="WMQI_DOCUMENTATION">LAWMATCHINV61_MESSAGE.\s</xsd:documentation>
+      <xsd:appinfo source="WMQI_APPINFO">
+        <MRMessage messageDefinition="/0/LAWMATCHINV61_MESSAGE;XSDElementDeclaration$MRObject"/>
+      </xsd:appinfo>
+    </xsd:annotation>
+  </xsd:element>
+</xsd:schema>
