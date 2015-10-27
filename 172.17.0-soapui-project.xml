@@ -1,0 +1,1972 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project name="172.17.0" soapui-version="3.0.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="TempConvertSoap12" type="wsdl" bindingName="{http://www.w3schools.com/webservices/}TempConvertSoap12" soapVersion="1_2" anonymous="optional" definition="http://172.17.0.45:2108/webservices/tempconvert?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://172.17.12.29:7080/sap/ale</con:endpoint></con:endpoints><con:operation isOneWay="false" action="http://www.w3schools.com/webservices/CelsiusToFahrenheit" name="CelsiusToFahrenheit" bindingOperationName="CelsiusToFahrenheit" type="Request-Response" outputName="CelsiusToFahrenheitResponse" inputName="CelsiusToFahrenheitRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.12.29:7080/sap/ale</con:endpoint><con:request><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<NS1:SapPordcr101 xmlns:NS1="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/sappordcr101">
+	<SAPTransactionID>C0A801652A3D553A6496043A</SAPTransactionID>
+	<SapPordcr101IDocBO>
+		<SapIDocControlRecord>
+			<Rcvpor>SAPMB</Rcvpor>
+			<Sndprt>KU</Sndprt>
+			<Sndpfc />
+			<Test />
+			<Mescod />
+			<Idoctyp>PORDCR101</Idoctyp>
+			<Sndprn>ECCCLNT800</Sndprn>
+			<Std />
+			<Arckey />
+			<Cretim>114317</Cretim>
+			<Doctyp />
+			<Tabnam>EDI_DC40</Tabnam>
+			<Credat>20150424</Credat>
+			<Refgrp />
+			<Outmod>2</Outmod>
+			<Mandt>800</Mandt>
+			<Rcvsad />
+			<Mestyp>PORDCR1</Mestyp>
+			<Rcvprn>MBCLNTPOC1</Rcvprn>
+			<Stdvrs />
+			<Rcvlad />
+			<Direct>1</Direct>
+			<Sndlad />
+			<Exprss />
+			<Sndsad />
+			<Docrel>731</Docrel>
+			<Serial />
+			<Sndpor>SAPE66</Sndpor>
+			<Docnum>0000000001213759</Docnum>
+			<Stdmes>PORDCR</Stdmes>
+			<Refint />
+			<Rcvpfc />
+			<Refmes />
+			<Mesfct />
+			<Cimtyp />
+			<Status>30</Status>
+			<Rcvprt>LS</Rcvprt>
+		</SapIDocControlRecord>
+		<SapPordcr101DataRecord>
+			<SapPordcr101E2pordcr1001>
+				<SapPordcr101E2bpmepoheader002>
+					<PoNumber>1000035279</PoNumber>
+					<CompCode>1002</CompCode>
+					<DocType>ZEPO</DocType>
+					<DeleteInd />
+					<Status />
+					<CreatDate />
+					<CreatedBy />
+					<ItemIntvl>00010</ItemIntvl>
+					<Vendor>0001020626</Vendor>
+					<Langu />
+					<LanguIso />
+					<Pmnttrms />
+					<Dscnt1To />
+					<Dscnt2To />
+					<Dscnt3To />
+					<DsctPct1 />
+					<DsctPct2 />
+					<PurchOrg>1000</PurchOrg>
+					<PurGroup>E01</PurGroup>
+					<Currency>USD</Currency>
+					<CurrencyIso />
+					<ExchRate />
+					<ExRateFx />
+					<DocDate />
+					<VperStart />
+					<VperEnd />
+					<Warranty />
+					<Quotation />
+					<QuotDate />
+					<Ref1 />
+					<SalesPers />
+					<Telephone />
+					<SupplVend />
+					<Customer />
+					<Agreement />
+					<GrMessage />
+					<SupplPlnt />
+					<Incoterms1 />
+					<Incoterms2 />
+					<CollectNo />
+					<DiffInv />
+					<OurRef>NAAPQS</OurRef>
+				</SapPordcr101E2bpmepoheader002>
+				<SapPordcr101E2bpmepoheaderx002>
+					<PoNumber>X</PoNumber>
+					<CompCode>X</CompCode>
+					<DocType>X</DocType>
+					<DeleteInd>X</DeleteInd>
+					<Status />
+					<CreatDate />
+					<CreatedBy />
+					<ItemIntvl>X</ItemIntvl>
+					<Vendor>X</Vendor>
+					<Langu />
+					<LanguIso />
+					<Pmnttrms />
+					<Dscnt1To />
+					<Dscnt2To />
+					<Dscnt3To />
+					<DsctPct1 />
+					<DsctPct2 />
+					<PurchOrg>X</PurchOrg>
+					<PurGroup>X</PurGroup>
+					<Currency>X</Currency>
+					<CurrencyIso />
+					<ExchRate />
+					<ExRateFx />
+					<DocDate />
+					<VperStart />
+					<VperEnd />
+					<Warranty />
+					<Quotation />
+					<QuotDate />
+					<Ref1 />
+					<SalesPers />
+					<Telephone />
+					<SupplVend />
+					<Customer />
+					<Agreement />
+					<GrMessage />
+					<SupplPlnt />
+					<Incoterms1>X</Incoterms1>
+					<Incoterms2>X</Incoterms2>
+					<CollectNo />
+					<DiffInv />
+					<OurRef>X</OurRef>
+				</SapPordcr101E2bpmepoheaderx002>
+				<SapPordcr101E2bpmepoitem001>
+					<PoItem>00010</PoItem>
+					<DeleteInd />
+					<ShortText>NEW Coke Contour PET BLACK Recycle Cente</ShortText>
+					<Material />
+					<MaterialExternal />
+					<MaterialGuid />
+					<MaterialVersion />
+					<Ematerial />
+					<EmaterialExternal />
+					<EmaterialGuid />
+					<EmaterialVersion />
+					<Plant>001</Plant>
+					<StgeLoc />
+					<Trackingno />
+					<MatlGroup>PRKS</MatlGroup>
+					<InfoRec />
+					<VendMat>CBK47110</VendMat>
+					<Quantity>1.0</Quantity>
+					<PoUnit>EA</PoUnit>
+					<PoUnitIso />
+					<OrderprUn>EA</OrderprUn>
+					<OrderprUnIso />
+					<ConvNum1 />
+					<ConvDen1 />
+					<NetPrice>48.65</NetPrice>
+					<PriceUnit />
+					<GrPrTime />
+					<TaxCode />
+					<BonGrp1 />
+					<QualInsp />
+					<InfoUpd />
+					<PrntPrice />
+					<EstPrice />
+					<Reminder1 />
+					<Reminder2 />
+					<Reminder3 />
+					<OverDlvTol />
+					<UnlimitedDlv />
+					<UnderDlvTol />
+					<ValType />
+					<NoMoreGr />
+					<FinalInv />
+					<ItemCat />
+					<Acctasscat>K</Acctasscat>
+					<Distrib />
+					<PartInv />
+					<GrInd />
+					<GrNonVal />
+					<IrInd />
+					<FreeItem />
+					<GrBasediv />
+					<AcknReqd />
+					<AcknowlNo />
+					<Agreement />
+					<AgmtItem />
+					<Shipping />
+					<Customer />
+					<CondGroup />
+					<NoDisct />
+					<PlanDel />
+					<NetWeight />
+					<Weightunit />
+					<WeightunitIso />
+					<Taxjurcode />
+					<CtrlKey />
+					<ConfCtrl />
+					<RevLev />
+					<Fund />
+					<FundsCtr />
+					<CmmtItem />
+					<Pricedate />
+					<PriceDate1 />
+					<GrossWt />
+					<Volume />
+					<Volumeunit />
+					<VolumeunitIso />
+					<Incoterms1 />
+					<Incoterms2 />
+					<PreVendor />
+					<VendPart />
+					<HlItem />
+					<GrToDate />
+					<SuppVendor />
+					<ScVendor />
+					<KanbanInd />
+					<Ers />
+					<RPromo />
+					<Points />
+					<PointUnit />
+					<PointUnitIso />
+					<Season />
+					<SeasonYr />
+					<BonGrp2 />
+					<BonGrp3 />
+					<SettItem />
+					<Minremlife />
+					<RfqNo />
+					<RfqItem />
+					<PreqNo />
+					<PreqItem />
+					<RefDoc />
+					<RefItem />
+					<SiCat />
+					<RetItem />
+					<AtRelev />
+					<OrderReason />
+					<BrasNbm />
+					<MatlUsage />
+					<MatOrigin />
+					<InHouse />
+					<Indus3 />
+					<InfIndex />
+					<UntilDate />
+					<DelivCompl />
+					<PartDeliv />
+					<ShipBlocked />
+					<PreqName>NAAPQS</PreqName>
+				</SapPordcr101E2bpmepoitem001>
+				<SapPordcr101E2bpmepoitem001>
+					<PoItem>00020</PoItem>
+					<DeleteInd />
+					<ShortText>Dasani PET BLACK Recycle Center (bottles</ShortText>
+					<Material />
+					<MaterialExternal />
+					<MaterialGuid />
+					<MaterialVersion />
+					<Ematerial />
+					<EmaterialExternal />
+					<EmaterialGuid />
+					<EmaterialVersion />
+					<Plant>001</Plant>
+					<StgeLoc />
+					<Trackingno />
+					<MatlGroup>PARK</MatlGroup>
+					<InfoRec />
+					<VendMat>CDP47100</VendMat>
+					<Quantity>1.0</Quantity>
+					<PoUnit>EA</PoUnit>
+					<PoUnitIso />
+					<OrderprUn>EA</OrderprUn>
+					<OrderprUnIso />
+					<ConvNum1 />
+					<ConvDen1 />
+					<NetPrice>52.5</NetPrice>
+					<PriceUnit />
+					<GrPrTime />
+					<TaxCode />
+					<BonGrp1 />
+					<QualInsp />
+					<InfoUpd />
+					<PrntPrice />
+					<EstPrice />
+					<Reminder1 />
+					<Reminder2 />
+					<Reminder3 />
+					<OverDlvTol />
+					<UnlimitedDlv />
+					<UnderDlvTol />
+					<ValType />
+					<NoMoreGr />
+					<FinalInv />
+					<ItemCat />
+					<Acctasscat>K</Acctasscat>
+					<Distrib />
+					<PartInv />
+					<GrInd />
+					<GrNonVal />
+					<IrInd />
+					<FreeItem />
+					<GrBasediv />
+					<AcknReqd />
+					<AcknowlNo />
+					<Agreement />
+					<AgmtItem />
+					<Shipping />
+					<Customer />
+					<CondGroup />
+					<NoDisct />
+					<PlanDel />
+					<NetWeight />
+					<Weightunit />
+					<WeightunitIso />
+					<Taxjurcode />
+					<CtrlKey />
+					<ConfCtrl />
+					<RevLev />
+					<Fund />
+					<FundsCtr />
+					<CmmtItem />
+					<Pricedate />
+					<PriceDate1 />
+					<GrossWt />
+					<Volume />
+					<Volumeunit />
+					<VolumeunitIso />
+					<Incoterms1 />
+					<Incoterms2 />
+					<PreVendor />
+					<VendPart />
+					<HlItem />
+					<GrToDate />
+					<SuppVendor />
+					<ScVendor />
+					<KanbanInd />
+					<Ers />
+					<RPromo />
+					<Points />
+					<PointUnit />
+					<PointUnitIso />
+					<Season />
+					<SeasonYr />
+					<BonGrp2 />
+					<BonGrp3 />
+					<SettItem />
+					<Minremlife />
+					<RfqNo />
+					<RfqItem />
+					<PreqNo />
+					<PreqItem />
+					<RefDoc />
+					<RefItem />
+					<SiCat />
+					<RetItem />
+					<AtRelev />
+					<OrderReason />
+					<BrasNbm />
+					<MatlUsage />
+					<MatOrigin />
+					<InHouse />
+					<Indus3 />
+					<InfIndex />
+					<UntilDate />
+					<DelivCompl />
+					<PartDeliv />
+					<ShipBlocked />
+					<PreqName>NAAPQS</PreqName>
+				</SapPordcr101E2bpmepoitem001>
+				<SapPordcr101E2bpmepoitemx004>
+					<PoItem>00010</PoItem>
+					<PoItemx />
+					<DeleteInd>X</DeleteInd>
+					<ShortText>X</ShortText>
+					<Material />
+					<MaterialExternal />
+					<MaterialGuid />
+					<MaterialVersion />
+					<Ematerial />
+					<EmaterialExternal />
+					<EmaterialGuid />
+					<EmaterialVersion />
+					<Plant>X</Plant>
+					<StgeLoc />
+					<Trackingno />
+					<MatlGroup>X</MatlGroup>
+					<InfoRec />
+					<VendMat>X</VendMat>
+					<Quantity>X</Quantity>
+					<PoUnit>X</PoUnit>
+					<PoUnitIso />
+					<OrderprUn>X</OrderprUn>
+					<OrderprUnIso />
+					<ConvNum1 />
+					<ConvDen1 />
+					<NetPrice>X</NetPrice>
+					<PriceUnit />
+					<GrPrTime />
+					<TaxCode />
+					<BonGrp1 />
+					<QualInsp />
+					<InfoUpd />
+					<PrntPrice />
+					<EstPrice />
+					<Reminder1 />
+					<Reminder2 />
+					<Reminder3 />
+					<OverDlvTol />
+					<UnlimitedDlv />
+					<UnderDlvTol />
+					<ValType />
+					<NoMoreGr>X</NoMoreGr>
+					<FinalInv />
+					<ItemCat />
+					<Acctasscat>X</Acctasscat>
+					<Distrib />
+					<PartInv />
+					<GrInd />
+					<GrNonVal />
+					<IrInd />
+					<FreeItem>X</FreeItem>
+					<GrBasediv />
+					<AcknReqd />
+					<AcknowlNo />
+					<Agreement />
+					<AgmtItem />
+					<Shipping />
+					<Customer />
+					<CondGroup />
+					<NoDisct />
+					<PlanDel />
+					<NetWeight />
+					<Weightunit />
+					<WeightunitIso />
+					<Taxjurcode />
+					<CtrlKey />
+					<ConfCtrl />
+					<RevLev />
+					<Fund />
+					<FundsCtr />
+					<CmmtItem />
+					<Pricedate />
+					<PriceDate1 />
+					<GrossWt />
+					<Volume />
+					<Volumeunit />
+					<VolumeunitIso />
+					<Incoterms1 />
+					<Incoterms2 />
+					<PreVendor />
+					<VendPart />
+					<HlItem />
+					<GrToDate />
+					<SuppVendor />
+					<ScVendor />
+					<KanbanInd />
+					<Ers />
+					<RPromo />
+					<Points />
+					<PointUnit />
+					<PointUnitIso />
+					<Season />
+					<SeasonYr />
+					<BonGrp2 />
+					<BonGrp3 />
+					<SettItem />
+					<Minremlife />
+					<RfqNo />
+					<RfqItem />
+					<PreqNo />
+					<PreqItem />
+					<RefDoc />
+					<RefItem />
+					<SiCat />
+					<RetItem />
+					<AtRelev />
+					<OrderReason />
+					<BrasNbm />
+					<MatlUsage />
+					<MatOrigin />
+					<InHouse />
+					<Indus3 />
+					<InfIndex />
+					<UntilDate />
+					<DelivCompl />
+					<PartDeliv />
+					<ShipBlocked />
+					<PreqName>X</PreqName>
+					<PeriodIndExpirationDate />
+					<IntObjNo />
+					<PckgNo />
+					<Batch />
+					<Vendrbatch>X</Vendrbatch>
+				</SapPordcr101E2bpmepoitemx004>
+				<SapPordcr101E2bpmepoitemx004>
+					<PoItem>00020</PoItem>
+					<PoItemx />
+					<DeleteInd>X</DeleteInd>
+					<ShortText>X</ShortText>
+					<Material />
+					<MaterialExternal />
+					<MaterialGuid />
+					<MaterialVersion />
+					<Ematerial />
+					<EmaterialExternal />
+					<EmaterialGuid />
+					<EmaterialVersion />
+					<Plant>X</Plant>
+					<StgeLoc />
+					<Trackingno />
+					<MatlGroup>X</MatlGroup>
+					<InfoRec />
+					<VendMat>X</VendMat>
+					<Quantity>X</Quantity>
+					<PoUnit>X</PoUnit>
+					<PoUnitIso />
+					<OrderprUn>X</OrderprUn>
+					<OrderprUnIso />
+					<ConvNum1 />
+					<ConvDen1 />
+					<NetPrice>X</NetPrice>
+					<PriceUnit />
+					<GrPrTime />
+					<TaxCode />
+					<BonGrp1 />
+					<QualInsp />
+					<InfoUpd />
+					<PrntPrice />
+					<EstPrice />
+					<Reminder1 />
+					<Reminder2 />
+					<Reminder3 />
+					<OverDlvTol />
+					<UnlimitedDlv />
+					<UnderDlvTol />
+					<ValType />
+					<NoMoreGr>X</NoMoreGr>
+					<FinalInv />
+					<ItemCat />
+					<Acctasscat>X</Acctasscat>
+					<Distrib />
+					<PartInv />
+					<GrInd />
+					<GrNonVal />
+					<IrInd />
+					<FreeItem>X</FreeItem>
+					<GrBasediv />
+					<AcknReqd />
+					<AcknowlNo />
+					<Agreement />
+					<AgmtItem />
+					<Shipping />
+					<Customer />
+					<CondGroup />
+					<NoDisct />
+					<PlanDel />
+					<NetWeight />
+					<Weightunit />
+					<WeightunitIso />
+					<Taxjurcode />
+					<CtrlKey />
+					<ConfCtrl />
+					<RevLev />
+					<Fund />
+					<FundsCtr />
+					<CmmtItem />
+					<Pricedate />
+					<PriceDate1 />
+					<GrossWt />
+					<Volume />
+					<Volumeunit />
+					<VolumeunitIso />
+					<Incoterms1 />
+					<Incoterms2 />
+					<PreVendor />
+					<VendPart />
+					<HlItem />
+					<GrToDate />
+					<SuppVendor />
+					<ScVendor />
+					<KanbanInd />
+					<Ers />
+					<RPromo />
+					<Points />
+					<PointUnit />
+					<PointUnitIso />
+					<Season />
+					<SeasonYr />
+					<BonGrp2 />
+					<BonGrp3 />
+					<SettItem />
+					<Minremlife />
+					<RfqNo />
+					<RfqItem />
+					<PreqNo />
+					<PreqItem />
+					<RefDoc />
+					<RefItem />
+					<SiCat />
+					<RetItem />
+					<AtRelev />
+					<OrderReason />
+					<BrasNbm />
+					<MatlUsage />
+					<MatOrigin />
+					<InHouse />
+					<Indus3 />
+					<InfIndex />
+					<UntilDate />
+					<DelivCompl />
+					<PartDeliv />
+					<ShipBlocked />
+					<PreqName>X</PreqName>
+					<PeriodIndExpirationDate />
+					<IntObjNo />
+					<PckgNo />
+					<Batch />
+					<Vendrbatch>X</Vendrbatch>
+				</SapPordcr101E2bpmepoitemx004>
+				<SapPordcr101E2bpmepoaddrdelivery000>
+					<PoItem>00010</PoItem>
+					<AddrNo />
+					<Formofaddr />
+					<Name>001 CORP</Name>
+					<Name2 />
+					<Name3 />
+					<Name4 />
+					<COName />
+					<City>Charlotte</City>
+					<District />
+					<CityNo />
+					<PostlCod1>28211</PostlCod1>
+					<PostlCod2 />
+					<PostlCod3 />
+					<PoBox />
+					<PoBoxCit />
+					<DelivDis />
+					<Street />
+					<StreetNo />
+					<StrAbbr />
+					<HouseNo />
+					<StrSuppl1 />
+					<StrSuppl2 />
+					<Location />
+					<Building />
+					<Floor />
+					<RoomNo />
+					<Country>US</Country>
+					<Langu />
+					<Region>NC</Region>
+				</SapPordcr101E2bpmepoaddrdelivery000>
+				<SapPordcr101E2bpmepoaddrdelivery000>
+					<PoItem>00020</PoItem>
+					<AddrNo />
+					<Formofaddr />
+					<Name>001 CORP</Name>
+					<Name2 />
+					<Name3 />
+					<Name4 />
+					<COName />
+					<City>Charlotte</City>
+					<District />
+					<CityNo />
+					<PostlCod1>28211</PostlCod1>
+					<PostlCod2 />
+					<PostlCod3 />
+					<PoBox />
+					<PoBoxCit />
+					<DelivDis />
+					<Street />
+					<StreetNo />
+					<StrAbbr />
+					<HouseNo />
+					<StrSuppl1 />
+					<StrSuppl2 />
+					<Location />
+					<Building />
+					<Floor />
+					<RoomNo />
+					<Country>US</Country>
+					<Langu />
+					<Region>NC</Region>
+				</SapPordcr101E2bpmepoaddrdelivery000>
+				<SapPordcr101E2bpmeposchedule002>
+					<PoItem>00010</PoItem>
+					<SchedLine>0001</SchedLine>
+					<DelDatcatExt>D</DelDatcatExt>
+					<DeliveryDate>04/28/2015</DeliveryDate>
+					<Quantity>1.0</Quantity>
+				</SapPordcr101E2bpmeposchedule002>
+				<SapPordcr101E2bpmeposchedule002>
+					<PoItem>00020</PoItem>
+					<SchedLine>0001</SchedLine>
+					<DelDatcatExt>D</DelDatcatExt>
+					<DeliveryDate>04/28/2015</DeliveryDate>
+					<Quantity>1.0</Quantity>
+				</SapPordcr101E2bpmeposchedule002>
+				<SapPordcr101E2bpmeposchedulx002>
+					<PoItem>00010</PoItem>
+					<SchedLine>0001</SchedLine>
+					<PoItemx>X</PoItemx>
+					<SchedLinex>X</SchedLinex>
+					<DelDatcatExt>X</DelDatcatExt>
+					<DeliveryDate>X</DeliveryDate>
+					<Quantity>X</Quantity>
+				</SapPordcr101E2bpmeposchedulx002>
+				<SapPordcr101E2bpmeposchedulx002>
+					<PoItem>00020</PoItem>
+					<SchedLine>0001</SchedLine>
+					<PoItemx>X</PoItemx>
+					<SchedLinex>X</SchedLinex>
+					<DelDatcatExt>X</DelDatcatExt>
+					<DeliveryDate>X</DeliveryDate>
+					<Quantity>X</Quantity>
+				</SapPordcr101E2bpmeposchedulx002>
+				<SapPordcr101E2bpmepoaccount002>
+					<PoItem>00010</PoItem>
+					<SerialNo>1</SerialNo>
+					<DeleteInd />
+					<CreatDate />
+					<Quantity />
+					<DistrPerc />
+					<NetValue />
+					<GlAccount>0000640010</GlAccount>
+					<BusArea />
+					<Costcenter>084-20601</Costcenter>
+					<SdDoc />
+					<ItmNumber />
+					<SchedLine />
+					<AssetNo />
+					<SubNumber />
+					<Orderid />
+					<GrRcpt />
+					<UnloadPt />
+					<CoArea>CCB</CoArea>
+				</SapPordcr101E2bpmepoaccount002>
+				<SapPordcr101E2bpmepoaccount002>
+					<PoItem>00020</PoItem>
+					<SerialNo>1</SerialNo>
+					<DeleteInd />
+					<CreatDate />
+					<Quantity />
+					<DistrPerc />
+					<NetValue />
+					<GlAccount>0000640010</GlAccount>
+					<BusArea />
+					<Costcenter>084-20601</Costcenter>
+					<SdDoc />
+					<ItmNumber />
+					<SchedLine />
+					<AssetNo />
+					<SubNumber />
+					<Orderid />
+					<GrRcpt />
+					<UnloadPt />
+					<CoArea>CCB</CoArea>
+				</SapPordcr101E2bpmepoaccount002>
+				<SapPordcr101E2bpmepoaccountx003>
+					<PoItem>00010</PoItem>
+					<SerialNo>1</SerialNo>
+					<PoItemx>X</PoItemx>
+					<SerialNox>X</SerialNox>
+					<DeleteInd />
+					<CreatDate />
+					<Quantity>X</Quantity>
+					<DistrPerc>X</DistrPerc>
+					<NetValue />
+					<GlAccount>X</GlAccount>
+					<BusArea />
+					<Costcenter>X</Costcenter>
+					<SdDoc />
+					<ItmNumber />
+					<SchedLine />
+					<AssetNo />
+					<SubNumber />
+					<Orderid />
+					<GrRcpt />
+					<UnloadPt />
+					<CoArea>X</CoArea>
+				</SapPordcr101E2bpmepoaccountx003>
+				<SapPordcr101E2bpmepoaccountx003>
+					<PoItem>00020</PoItem>
+					<SerialNo>1</SerialNo>
+					<PoItemx>X</PoItemx>
+					<SerialNox>X</SerialNox>
+					<DeleteInd />
+					<CreatDate />
+					<Quantity>X</Quantity>
+					<DistrPerc>X</DistrPerc>
+					<NetValue />
+					<GlAccount>X</GlAccount>
+					<BusArea />
+					<Costcenter>X</Costcenter>
+					<SdDoc />
+					<ItmNumber />
+					<SchedLine />
+					<AssetNo />
+					<SubNumber />
+					<Orderid />
+					<GrRcpt />
+					<UnloadPt />
+					<CoArea>X</CoArea>
+				</SapPordcr101E2bpmepoaccountx003>
+				<SapPordcr101E2bpmepotext000>
+					<PoNumber>1000035279</PoNumber>
+					<PoItem>00010</PoItem>
+					<TextId>F01</TextId>
+					<TextForm />
+					<TextLine>NEW Coke Contour PET BLACK Recycle Center (bottles and Cans)- made out of 100% post consumer waste material--this means that this tr</TextLine>
+				</SapPordcr101E2bpmepotext000>
+				<SapPordcr101E2bpmepotext000>
+					<PoNumber>1000035279</PoNumber>
+					<PoItem>00020</PoItem>
+					<TextId>F01</TextId>
+					<TextForm />
+					<TextLine>Dasani PET BLACK Recycle Center (bottles and Cans)- made out of 100% post consumer waste material; Includes Dasani 2011 graphic wrap</TextLine>
+				</SapPordcr101E2bpmepotext000>
+			</SapPordcr101E2pordcr1001>
+		</SapPordcr101DataRecord>
+	</SapPordcr101IDocBO>
+</NS1:SapPordcr101>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/extensions/http://schemas.xmlsoap.org/wsdl/soap12/TempConvertSoap/CelsiusToFahrenheitRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="http://www.w3schools.com/webservices/FahrenheitToCelsius" name="FahrenheitToCelsius" bindingOperationName="FahrenheitToCelsius" type="Request-Response" outputName="FahrenheitToCelsiusResponse" inputName="FahrenheitToCelsiusRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.12.29:7080/sap/ale</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.w3schools.com/webservices/">
+   <soap:Header/>
+   <soap:Body>
+      <web:FahrenheitToCelsius>
+         <!--Optional:-->
+         <web:Fahrenheit>1</web:Fahrenheit>
+      </web:FahrenheitToCelsius>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/extensions/http://schemas.xmlsoap.org/wsdl/soap12/TempConvertSoap/FahrenheitToCelsiusRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="TempConvertSoap" type="wsdl" bindingName="{http://www.datapower.com/extensions/http://schemas.xmlsoap.org/wsdl/soap12/}TempConvertSoap" soapVersion="1_2" anonymous="optional" definition="http://172.17.0.45:2108/webservices/tempconvert?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://172.17.0.45:2108/webservices/tempconvert?wsdl"><con:part><con:url>http://172.17.0.45:2108/webservices/tempconvert?wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.w3schools.com/webservices/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap11="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp200409="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsp200607="http://www.w3.org/2006/07/ws-policy" xmlns:ns0="http://www.w3schools.com/webservices/">
+  <wsdl:types xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:schema>
+      <xsd:import schemaLocation="tempconvert.xsd1.xsd" namespace="http://www.w3schools.com/webservices/"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="CelsiusToFahrenheitHttpPostIn">
+    <wsdl:part name="Celsius" type="xsns:string" xmlns:xsns="http://www.w3.org/2001/XMLSchema"/>
+  </wsdl:message>
+  <wsdl:message name="CelsiusToFahrenheitHttpPostOut">
+    <wsdl:part name="Body" element="xsns:string" xmlns:xsns="http://www.w3schools.com/webservices/"/>
+  </wsdl:message>
+  <wsdl:message name="CelsiusToFahrenheitSoapIn">
+    <wsdl:part name="parameters" element="xsns:CelsiusToFahrenheit" xmlns:xsns="http://www.w3schools.com/webservices/"/>
+  </wsdl:message>
+  <wsdl:message name="CelsiusToFahrenheitSoapOut">
+    <wsdl:part name="parameters" element="xsns:CelsiusToFahrenheitResponse" xmlns:xsns="http://www.w3schools.com/webservices/"/>
+  </wsdl:message>
+  <wsdl:message name="FahrenheitToCelsiusHttpPostIn">
+    <wsdl:part name="Fahrenheit" type="xsns:string" xmlns:xsns="http://www.w3.org/2001/XMLSchema"/>
+  </wsdl:message>
+  <wsdl:message name="FahrenheitToCelsiusHttpPostOut">
+    <wsdl:part name="Body" element="xsns:string" xmlns:xsns="http://www.w3schools.com/webservices/"/>
+  </wsdl:message>
+  <wsdl:message name="FahrenheitToCelsiusSoapIn">
+    <wsdl:part name="parameters" element="xsns:FahrenheitToCelsius" xmlns:xsns="http://www.w3schools.com/webservices/"/>
+  </wsdl:message>
+  <wsdl:message name="FahrenheitToCelsiusSoapOut">
+    <wsdl:part name="parameters" element="xsns:FahrenheitToCelsiusResponse" xmlns:xsns="http://www.w3schools.com/webservices/"/>
+  </wsdl:message>
+  <wsdl:portType name="TempConvertHttpPost">
+    <wsdl:operation name="CelsiusToFahrenheit">
+      <wsdl:input name="CelsiusToFahrenheitRequest" message="ns0:CelsiusToFahrenheitHttpPostIn"/>
+      <wsdl:output name="CelsiusToFahrenheitResponse" message="ns0:CelsiusToFahrenheitHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="FahrenheitToCelsius">
+      <wsdl:input name="FahrenheitToCelsiusRequest" message="ns0:FahrenheitToCelsiusHttpPostIn"/>
+      <wsdl:output name="FahrenheitToCelsiusResponse" message="ns0:FahrenheitToCelsiusHttpPostOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="TempConvertSoap">
+    <wsdl:operation name="CelsiusToFahrenheit">
+      <wsdl:input name="CelsiusToFahrenheitRequest" message="ns0:CelsiusToFahrenheitSoapIn"/>
+      <wsdl:output name="CelsiusToFahrenheitResponse" message="ns0:CelsiusToFahrenheitSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="FahrenheitToCelsius">
+      <wsdl:input name="FahrenheitToCelsiusRequest" message="ns0:FahrenheitToCelsiusSoapIn"/>
+      <wsdl:output name="FahrenheitToCelsiusResponse" message="ns0:FahrenheitToCelsiusSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TempConvertSoap" type="ns0:TempConvertSoap">
+    <soap11:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="CelsiusToFahrenheit">
+      <soap11:operation soapAction="http://www.w3schools.com/webservices/CelsiusToFahrenheit" style="document"/>
+      <wsdl:input name="CelsiusToFahrenheitRequest">
+        <soap11:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="CelsiusToFahrenheitResponse">
+        <soap11:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FahrenheitToCelsius">
+      <soap11:operation soapAction="http://www.w3schools.com/webservices/FahrenheitToCelsius" style="document"/>
+      <wsdl:input name="FahrenheitToCelsiusRequest">
+        <soap11:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="FahrenheitToCelsiusResponse">
+        <soap11:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TempConvertSoap12" type="ns0:TempConvertSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="CelsiusToFahrenheit">
+      <soap12:operation soapAction="http://www.w3schools.com/webservices/CelsiusToFahrenheit" soapActionRequired="false" style="document"/>
+      <wsdl:input name="CelsiusToFahrenheitRequest">
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="CelsiusToFahrenheitResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FahrenheitToCelsius">
+      <soap12:operation soapAction="http://www.w3schools.com/webservices/FahrenheitToCelsius" soapActionRequired="false" style="document"/>
+      <wsdl:input name="FahrenheitToCelsiusRequest">
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="FahrenheitToCelsiusResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TempConvert">
+    <wsdl:port name="TempConvertSoap" binding="ns0:TempConvertSoap">
+      <soap11:address location="http://172.17.0.45:2108/webservices/tempconvert"/>
+    </wsdl:port>
+    <wsdl:port name="TempConvertSoap12" binding="ns0:TempConvertSoap12">
+      <soap12:address location="http://172.17.0.45:2108/webservices/tempconvert"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://172.17.0.45:2108/webservices/tempconvert.xsd1.xsd</con:url><con:content><![CDATA[<s:schema elementFormDefault="qualified" targetNamespace="http://www.w3schools.com/webservices/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.w3schools.com/webservices/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <s:element name="FahrenheitToCelsius">
+    <s:complexType>
+      <s:sequence>
+        <s:element minOccurs="0" maxOccurs="1" name="Fahrenheit" type="s:string"/>
+      </s:sequence>
+    </s:complexType>
+  </s:element>
+  <s:element name="FahrenheitToCelsiusResponse">
+    <s:complexType>
+      <s:sequence>
+        <s:element minOccurs="0" maxOccurs="1" name="FahrenheitToCelsiusResult" type="s:string"/>
+      </s:sequence>
+    </s:complexType>
+  </s:element>
+  <s:element name="CelsiusToFahrenheit">
+    <s:complexType>
+      <s:sequence>
+        <s:element minOccurs="0" maxOccurs="1" name="Celsius" type="s:string"/>
+      </s:sequence>
+    </s:complexType>
+  </s:element>
+  <s:element name="CelsiusToFahrenheitResponse">
+    <s:complexType>
+      <s:sequence>
+        <s:element minOccurs="0" maxOccurs="1" name="CelsiusToFahrenheitResult" type="s:string"/>
+      </s:sequence>
+    </s:complexType>
+  </s:element>
+  <s:element name="string" nillable="true" type="s:string"/>
+</s:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://172.17.0.45:2108/webservices/tempconvert</con:endpoint></con:endpoints><con:operation isOneWay="false" action="http://www.w3schools.com/webservices/CelsiusToFahrenheit" name="CelsiusToFahrenheit" bindingOperationName="CelsiusToFahrenheit" type="Request-Response" outputName="CelsiusToFahrenheitResponse" inputName="CelsiusToFahrenheitRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.0.45:2108/webservices/tempconvert</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.w3schools.com/webservices/">
+   <soap:Header/>
+   <soap:Body>
+      <web:CelsiusToFahrenheit>
+         <!--Optional:-->
+         <web:Celsius>?</web:Celsius>
+      </web:CelsiusToFahrenheit>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/extensions/http://schemas.xmlsoap.org/wsdl/soap12/TempConvertSoap/CelsiusToFahrenheitRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call name="SAP_ALEtest"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.0.45:2108/webservices/tempconvert</con:endpoint><con:wsaConfig mustUnderstand="NONE" version="200508"/></con:call></con:operation><con:operation isOneWay="false" action="http://www.w3schools.com/webservices/FahrenheitToCelsius" name="FahrenheitToCelsius" bindingOperationName="FahrenheitToCelsius" type="Request-Response" outputName="FahrenheitToCelsiusResponse" inputName="FahrenheitToCelsiusRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.17.0.45:2108/webservices/tempconvert</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.w3schools.com/webservices/">
+   <soap:Header/>
+   <soap:Body>
+      <web:FahrenheitToCelsius>
+         <!--Optional:-->
+         <web:Fahrenheit>?</web:Fahrenheit>
+      </web:FahrenheitToCelsius>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.datapower.com/extensions/http://schemas.xmlsoap.org/wsdl/soap12/TempConvertSoap/FahrenheitToCelsiusRequest"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="TempConvertSoap" type="wsdl" bindingName="{http://www.w3schools.com/webservices/}TempConvertSoap" soapVersion="1_1" anonymous="optional" definition="http://172.17.0.45:2108/webservices/tempconvert?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://172.17.0.45:2108/webservices/tempconvert?wsdl"><con:part><con:url>http://172.17.0.45:2108/webservices/tempconvert?wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.datapower.com/extensions/http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap11="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp200409="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsp200607="http://www.w3.org/2006/07/ws-policy" xmlns:ns0="http://www.datapower.com/extensions/http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:ns1="http://www.w3schools.com/webservices/">
+  <wsdl:import location="tempconvert?ns1.wsdl" namespace="http://www.w3schools.com/webservices/"/>
+  <wsdl:binding name="TempConvertSoap" type="ns1:TempConvertSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="CelsiusToFahrenheit">
+      <soap12:operation soapAction="http://www.w3schools.com/webservices/CelsiusToFahrenheit" soapActionRequired="true" style="document"/>
+      <wsdl:input name="CelsiusToFahrenheitRequest">
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="CelsiusToFahrenheitResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FahrenheitToCelsius">
+      <soap12:operation soapAction="http://www.w3schools.com/webservices/FahrenheitToCelsius" soapActionRequired="true" style="document"/>
+      <wsdl:input name="FahrenheitToCelsiusRequest">
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="FahrenheitToCelsiusResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://172.17.0.45:2108/webservices/tempconvert?ns1.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.w3schools.com/webservices/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap11="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp200409="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsp200607="http://www.w3.org/2006/07/ws-policy" xmlns:ns0="http://www.datapower.com/extensions/http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:ns1="http://www.w3schools.com/webservices/">
+  <wsdl:types xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:schema>
+      <xsd:import schemaLocation="tempconvert.xsd1.xsd" namespace="http://www.w3schools.com/webservices/"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="CelsiusToFahrenheitHttpPostIn">
+    <wsdl:part name="Celsius" type="xsns:string" xmlns:xsns="http://www.w3.org/2001/XMLSchema"/>
+  </wsdl:message>
+  <wsdl:message name="CelsiusToFahrenheitHttpPostOut">
+    <wsdl:part name="Body" element="xsns:string" xmlns:xsns="http://www.w3schools.com/webservices/"/>
+  </wsdl:message>
+  <wsdl:message name="CelsiusToFahrenheitSoapIn">
+    <wsdl:part name="parameters" element="xsns:CelsiusToFahrenheit" xmlns:xsns="http://www.w3schools.com/webservices/"/>
+  </wsdl:message>
+  <wsdl:message name="CelsiusToFahrenheitSoapOut">
+    <wsdl:part name="parameters" element="xsns:CelsiusToFahrenheitResponse" xmlns:xsns="http://www.w3schools.com/webservices/"/>
+  </wsdl:message>
+  <wsdl:message name="FahrenheitToCelsiusHttpPostIn">
+    <wsdl:part name="Fahrenheit" type="xsns:string" xmlns:xsns="http://www.w3.org/2001/XMLSchema"/>
+  </wsdl:message>
+  <wsdl:message name="FahrenheitToCelsiusHttpPostOut">
+    <wsdl:part name="Body" element="xsns:string" xmlns:xsns="http://www.w3schools.com/webservices/"/>
+  </wsdl:message>
+  <wsdl:message name="FahrenheitToCelsiusSoapIn">
+    <wsdl:part name="parameters" element="xsns:FahrenheitToCelsius" xmlns:xsns="http://www.w3schools.com/webservices/"/>
+  </wsdl:message>
+  <wsdl:message name="FahrenheitToCelsiusSoapOut">
+    <wsdl:part name="parameters" element="xsns:FahrenheitToCelsiusResponse" xmlns:xsns="http://www.w3schools.com/webservices/"/>
+  </wsdl:message>
+  <wsdl:portType name="TempConvertHttpPost">
+    <wsdl:operation name="CelsiusToFahrenheit">
+      <wsdl:input name="CelsiusToFahrenheitRequest" message="ns1:CelsiusToFahrenheitHttpPostIn"/>
+      <wsdl:output name="CelsiusToFahrenheitResponse" message="ns1:CelsiusToFahrenheitHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="FahrenheitToCelsius">
+      <wsdl:input name="FahrenheitToCelsiusRequest" message="ns1:FahrenheitToCelsiusHttpPostIn"/>
+      <wsdl:output name="FahrenheitToCelsiusResponse" message="ns1:FahrenheitToCelsiusHttpPostOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="TempConvertSoap">
+    <wsdl:operation name="CelsiusToFahrenheit">
+      <wsdl:input name="CelsiusToFahrenheitRequest" message="ns1:CelsiusToFahrenheitSoapIn"/>
+      <wsdl:output name="CelsiusToFahrenheitResponse" message="ns1:CelsiusToFahrenheitSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="FahrenheitToCelsius">
+      <wsdl:input name="FahrenheitToCelsiusRequest" message="ns1:FahrenheitToCelsiusSoapIn"/>
+      <wsdl:output name="FahrenheitToCelsiusResponse" message="ns1:FahrenheitToCelsiusSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TempConvertSoap" type="ns1:TempConvertSoap">
+    <soap11:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="CelsiusToFahrenheit">
+      <soap11:operation soapAction="http://www.w3schools.com/webservices/CelsiusToFahrenheit" style="document"/>
+      <wsdl:input name="CelsiusToFahrenheitRequest">
+        <soap11:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="CelsiusToFahrenheitResponse">
+        <soap11:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FahrenheitToCelsius">
+      <soap11:operation soapAction="http://www.w3schools.com/webservices/FahrenheitToCelsius" style="document"/>
+      <wsdl:input name="FahrenheitToCelsiusRequest">
+        <soap11:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="FahrenheitToCelsiusResponse">
+        <soap11:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TempConvertSoap12" type="ns1:TempConvertSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="CelsiusToFahrenheit">
+      <soap12:operation soapAction="http://www.w3schools.com/webservices/CelsiusToFahrenheit" soapActionRequired="false" style="document"/>
+      <wsdl:input name="CelsiusToFahrenheitRequest">
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="CelsiusToFahrenheitResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FahrenheitToCelsius">
+      <soap12:operation soapAction="http://www.w3schools.com/webservices/FahrenheitToCelsius" soapActionRequired="false" style="document"/>
+      <wsdl:input name="FahrenheitToCelsiusRequest">
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="FahrenheitToCelsiusResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TempConvert">
+    <wsdl:port name="TempConvertSoap" binding="ns1:TempConvertSoap">
+      <soap11:address location="http://172.17.0.45:2108/webservices/tempconvert"/>
+    </wsdl:port>
+    <wsdl:port name="TempConvertSoap.0" binding="ns0:TempConvertSoap">
+      <soap12:address location="http://172.17.0.45:2108/webservices/tempconvert"/>
+    </wsdl:port>
+    <wsdl:port name="TempConvertSoap12" binding="ns1:TempConvertSoap12">
+      <soap12:address location="http://172.17.0.45:2108/webservices/tempconvert"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://172.17.0.45:2108/webservices/tempconvert.xsd1.xsd</con:url><con:content><![CDATA[<s:schema elementFormDefault="qualified" targetNamespace="http://www.w3schools.com/webservices/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.w3schools.com/webservices/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <s:element name="FahrenheitToCelsius">
+    <s:complexType>
+      <s:sequence>
+        <s:element minOccurs="0" maxOccurs="1" name="Fahrenheit" type="s:string"/>
+      </s:sequence>
+    </s:complexType>
+  </s:element>
+  <s:element name="FahrenheitToCelsiusResponse">
+    <s:complexType>
+      <s:sequence>
+        <s:element minOccurs="0" maxOccurs="1" name="FahrenheitToCelsiusResult" type="s:string"/>
+      </s:sequence>
+    </s:complexType>
+  </s:element>
+  <s:element name="CelsiusToFahrenheit">
+    <s:complexType>
+      <s:sequence>
+        <s:element minOccurs="0" maxOccurs="1" name="Celsius" type="s:string"/>
+      </s:sequence>
+    </s:complexType>
+  </s:element>
+  <s:element name="CelsiusToFahrenheitResponse">
+    <s:complexType>
+      <s:sequence>
+        <s:element minOccurs="0" maxOccurs="1" name="CelsiusToFahrenheitResult" type="s:string"/>
+      </s:sequence>
+    </s:complexType>
+  </s:element>
+  <s:element name="string" nillable="true" type="s:string"/>
+</s:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://182.72.208.43:7080/sap/ale</con:endpoint></con:endpoints><con:operation isOneWay="false" action="http://www.w3schools.com/webservices/CelsiusToFahrenheit" name="CelsiusToFahrenheit" bindingOperationName="CelsiusToFahrenheit" type="Request-Response" outputName="CelsiusToFahrenheitResponse" inputName="CelsiusToFahrenheitRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://182.72.208.43:7080/sap/ale</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.w3schools.com/webservices/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:CelsiusToFahrenheit>
+         <!--Optional:-->
+         <web:Celsius>?</web:Celsius>
+      </web:CelsiusToFahrenheit>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.w3schools.com/webservices/CelsiusToFahrenheit"/></con:call></con:operation><con:operation isOneWay="false" action="http://www.w3schools.com/webservices/FahrenheitToCelsius" name="FahrenheitToCelsius" bindingOperationName="FahrenheitToCelsius" type="Request-Response" outputName="FahrenheitToCelsiusResponse" inputName="FahrenheitToCelsiusRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://182.72.208.43:7080/sap/ale</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.w3schools.com/webservices/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:FahrenheitToCelsius>
+         <!--Optional:-->
+         <web:Fahrenheit>34</web:Fahrenheit>
+      </web:FahrenheitToCelsius>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.w3schools.com/webservices/FahrenheitToCelsius"/><con:wsrmConfig version="1.2"/></con:call><con:call name="RequestSAP"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://182.72.208.43:7080/sap/ale</con:endpoint><con:request><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<NS1:SapPordcr101 xmlns:NS1="http://www.ibm.com/xmlns/prod/websphere/j2ca/sap/sappordcr101">
+	<SAPTransactionID>C0A801652A3D553A6496043A</SAPTransactionID>
+	<SapPordcr101IDocBO>
+		<SapIDocControlRecord>
+			<Rcvpor>SAPMB</Rcvpor>
+			<Sndprt>KU</Sndprt>
+			<Sndpfc />
+			<Test />
+			<Mescod />
+			<Idoctyp>PORDCR101</Idoctyp>
+			<Sndprn>ECCCLNT800</Sndprn>
+			<Std />
+			<Arckey />
+			<Cretim>114317</Cretim>
+			<Doctyp />
+			<Tabnam>EDI_DC40</Tabnam>
+			<Credat>20150424</Credat>
+			<Refgrp />
+			<Outmod>2</Outmod>
+			<Mandt>800</Mandt>
+			<Rcvsad />
+			<Mestyp>PORDCR1</Mestyp>
+			<Rcvprn>MBCLNTPOC1</Rcvprn>
+			<Stdvrs />
+			<Rcvlad />
+			<Direct>1</Direct>
+			<Sndlad />
+			<Exprss />
+			<Sndsad />
+			<Docrel>731</Docrel>
+			<Serial />
+			<Sndpor>SAPE66</Sndpor>
+			<Docnum>0000000001213759</Docnum>
+			<Stdmes>PORDCR</Stdmes>
+			<Refint />
+			<Rcvpfc />
+			<Refmes />
+			<Mesfct />
+			<Cimtyp />
+			<Status>30</Status>
+			<Rcvprt>LS</Rcvprt>
+		</SapIDocControlRecord>
+		<SapPordcr101DataRecord>
+			<SapPordcr101E2pordcr1001>
+				<SapPordcr101E2bpmepoheader002>
+					<PoNumber>1000035279</PoNumber>
+					<CompCode>1002</CompCode>
+					<DocType>ZEPO</DocType>
+					<DeleteInd />
+					<Status />
+					<CreatDate />
+					<CreatedBy />
+					<ItemIntvl>00010</ItemIntvl>
+					<Vendor>0001020626</Vendor>
+					<Langu />
+					<LanguIso />
+					<Pmnttrms />
+					<Dscnt1To />
+					<Dscnt2To />
+					<Dscnt3To />
+					<DsctPct1 />
+					<DsctPct2 />
+					<PurchOrg>1000</PurchOrg>
+					<PurGroup>E01</PurGroup>
+					<Currency>USD</Currency>
+					<CurrencyIso />
+					<ExchRate />
+					<ExRateFx />
+					<DocDate />
+					<VperStart />
+					<VperEnd />
+					<Warranty />
+					<Quotation />
+					<QuotDate />
+					<Ref1 />
+					<SalesPers />
+					<Telephone />
+					<SupplVend />
+					<Customer />
+					<Agreement />
+					<GrMessage />
+					<SupplPlnt />
+					<Incoterms1 />
+					<Incoterms2 />
+					<CollectNo />
+					<DiffInv />
+					<OurRef>NAAPQS</OurRef>
+				</SapPordcr101E2bpmepoheader002>
+				<SapPordcr101E2bpmepoheaderx002>
+					<PoNumber>X</PoNumber>
+					<CompCode>X</CompCode>
+					<DocType>X</DocType>
+					<DeleteInd>X</DeleteInd>
+					<Status />
+					<CreatDate />
+					<CreatedBy />
+					<ItemIntvl>X</ItemIntvl>
+					<Vendor>X</Vendor>
+					<Langu />
+					<LanguIso />
+					<Pmnttrms />
+					<Dscnt1To />
+					<Dscnt2To />
+					<Dscnt3To />
+					<DsctPct1 />
+					<DsctPct2 />
+					<PurchOrg>X</PurchOrg>
+					<PurGroup>X</PurGroup>
+					<Currency>X</Currency>
+					<CurrencyIso />
+					<ExchRate />
+					<ExRateFx />
+					<DocDate />
+					<VperStart />
+					<VperEnd />
+					<Warranty />
+					<Quotation />
+					<QuotDate />
+					<Ref1 />
+					<SalesPers />
+					<Telephone />
+					<SupplVend />
+					<Customer />
+					<Agreement />
+					<GrMessage />
+					<SupplPlnt />
+					<Incoterms1>X</Incoterms1>
+					<Incoterms2>X</Incoterms2>
+					<CollectNo />
+					<DiffInv />
+					<OurRef>X</OurRef>
+				</SapPordcr101E2bpmepoheaderx002>
+				<SapPordcr101E2bpmepoitem001>
+					<PoItem>00010</PoItem>
+					<DeleteInd />
+					<ShortText>NEW Coke Contour PET BLACK Recycle Cente</ShortText>
+					<Material />
+					<MaterialExternal />
+					<MaterialGuid />
+					<MaterialVersion />
+					<Ematerial />
+					<EmaterialExternal />
+					<EmaterialGuid />
+					<EmaterialVersion />
+					<Plant>001</Plant>
+					<StgeLoc />
+					<Trackingno />
+					<MatlGroup>PRKS</MatlGroup>
+					<InfoRec />
+					<VendMat>CBK47110</VendMat>
+					<Quantity>1.0</Quantity>
+					<PoUnit>EA</PoUnit>
+					<PoUnitIso />
+					<OrderprUn>EA</OrderprUn>
+					<OrderprUnIso />
+					<ConvNum1 />
+					<ConvDen1 />
+					<NetPrice>48.65</NetPrice>
+					<PriceUnit />
+					<GrPrTime />
+					<TaxCode />
+					<BonGrp1 />
+					<QualInsp />
+					<InfoUpd />
+					<PrntPrice />
+					<EstPrice />
+					<Reminder1 />
+					<Reminder2 />
+					<Reminder3 />
+					<OverDlvTol />
+					<UnlimitedDlv />
+					<UnderDlvTol />
+					<ValType />
+					<NoMoreGr />
+					<FinalInv />
+					<ItemCat />
+					<Acctasscat>K</Acctasscat>
+					<Distrib />
+					<PartInv />
+					<GrInd />
+					<GrNonVal />
+					<IrInd />
+					<FreeItem />
+					<GrBasediv />
+					<AcknReqd />
+					<AcknowlNo />
+					<Agreement />
+					<AgmtItem />
+					<Shipping />
+					<Customer />
+					<CondGroup />
+					<NoDisct />
+					<PlanDel />
+					<NetWeight />
+					<Weightunit />
+					<WeightunitIso />
+					<Taxjurcode />
+					<CtrlKey />
+					<ConfCtrl />
+					<RevLev />
+					<Fund />
+					<FundsCtr />
+					<CmmtItem />
+					<Pricedate />
+					<PriceDate1 />
+					<GrossWt />
+					<Volume />
+					<Volumeunit />
+					<VolumeunitIso />
+					<Incoterms1 />
+					<Incoterms2 />
+					<PreVendor />
+					<VendPart />
+					<HlItem />
+					<GrToDate />
+					<SuppVendor />
+					<ScVendor />
+					<KanbanInd />
+					<Ers />
+					<RPromo />
+					<Points />
+					<PointUnit />
+					<PointUnitIso />
+					<Season />
+					<SeasonYr />
+					<BonGrp2 />
+					<BonGrp3 />
+					<SettItem />
+					<Minremlife />
+					<RfqNo />
+					<RfqItem />
+					<PreqNo />
+					<PreqItem />
+					<RefDoc />
+					<RefItem />
+					<SiCat />
+					<RetItem />
+					<AtRelev />
+					<OrderReason />
+					<BrasNbm />
+					<MatlUsage />
+					<MatOrigin />
+					<InHouse />
+					<Indus3 />
+					<InfIndex />
+					<UntilDate />
+					<DelivCompl />
+					<PartDeliv />
+					<ShipBlocked />
+					<PreqName>NAAPQS</PreqName>
+				</SapPordcr101E2bpmepoitem001>
+				<SapPordcr101E2bpmepoitem001>
+					<PoItem>00020</PoItem>
+					<DeleteInd />
+					<ShortText>Dasani PET BLACK Recycle Center (bottles</ShortText>
+					<Material />
+					<MaterialExternal />
+					<MaterialGuid />
+					<MaterialVersion />
+					<Ematerial />
+					<EmaterialExternal />
+					<EmaterialGuid />
+					<EmaterialVersion />
+					<Plant>001</Plant>
+					<StgeLoc />
+					<Trackingno />
+					<MatlGroup>PARK</MatlGroup>
+					<InfoRec />
+					<VendMat>CDP47100</VendMat>
+					<Quantity>1.0</Quantity>
+					<PoUnit>EA</PoUnit>
+					<PoUnitIso />
+					<OrderprUn>EA</OrderprUn>
+					<OrderprUnIso />
+					<ConvNum1 />
+					<ConvDen1 />
+					<NetPrice>52.5</NetPrice>
+					<PriceUnit />
+					<GrPrTime />
+					<TaxCode />
+					<BonGrp1 />
+					<QualInsp />
+					<InfoUpd />
+					<PrntPrice />
+					<EstPrice />
+					<Reminder1 />
+					<Reminder2 />
+					<Reminder3 />
+					<OverDlvTol />
+					<UnlimitedDlv />
+					<UnderDlvTol />
+					<ValType />
+					<NoMoreGr />
+					<FinalInv />
+					<ItemCat />
+					<Acctasscat>K</Acctasscat>
+					<Distrib />
+					<PartInv />
+					<GrInd />
+					<GrNonVal />
+					<IrInd />
+					<FreeItem />
+					<GrBasediv />
+					<AcknReqd />
+					<AcknowlNo />
+					<Agreement />
+					<AgmtItem />
+					<Shipping />
+					<Customer />
+					<CondGroup />
+					<NoDisct />
+					<PlanDel />
+					<NetWeight />
+					<Weightunit />
+					<WeightunitIso />
+					<Taxjurcode />
+					<CtrlKey />
+					<ConfCtrl />
+					<RevLev />
+					<Fund />
+					<FundsCtr />
+					<CmmtItem />
+					<Pricedate />
+					<PriceDate1 />
+					<GrossWt />
+					<Volume />
+					<Volumeunit />
+					<VolumeunitIso />
+					<Incoterms1 />
+					<Incoterms2 />
+					<PreVendor />
+					<VendPart />
+					<HlItem />
+					<GrToDate />
+					<SuppVendor />
+					<ScVendor />
+					<KanbanInd />
+					<Ers />
+					<RPromo />
+					<Points />
+					<PointUnit />
+					<PointUnitIso />
+					<Season />
+					<SeasonYr />
+					<BonGrp2 />
+					<BonGrp3 />
+					<SettItem />
+					<Minremlife />
+					<RfqNo />
+					<RfqItem />
+					<PreqNo />
+					<PreqItem />
+					<RefDoc />
+					<RefItem />
+					<SiCat />
+					<RetItem />
+					<AtRelev />
+					<OrderReason />
+					<BrasNbm />
+					<MatlUsage />
+					<MatOrigin />
+					<InHouse />
+					<Indus3 />
+					<InfIndex />
+					<UntilDate />
+					<DelivCompl />
+					<PartDeliv />
+					<ShipBlocked />
+					<PreqName>NAAPQS</PreqName>
+				</SapPordcr101E2bpmepoitem001>
+				<SapPordcr101E2bpmepoitemx004>
+					<PoItem>00010</PoItem>
+					<PoItemx />
+					<DeleteInd>X</DeleteInd>
+					<ShortText>X</ShortText>
+					<Material />
+					<MaterialExternal />
+					<MaterialGuid />
+					<MaterialVersion />
+					<Ematerial />
+					<EmaterialExternal />
+					<EmaterialGuid />
+					<EmaterialVersion />
+					<Plant>X</Plant>
+					<StgeLoc />
+					<Trackingno />
+					<MatlGroup>X</MatlGroup>
+					<InfoRec />
+					<VendMat>X</VendMat>
+					<Quantity>X</Quantity>
+					<PoUnit>X</PoUnit>
+					<PoUnitIso />
+					<OrderprUn>X</OrderprUn>
+					<OrderprUnIso />
+					<ConvNum1 />
+					<ConvDen1 />
+					<NetPrice>X</NetPrice>
+					<PriceUnit />
+					<GrPrTime />
+					<TaxCode />
+					<BonGrp1 />
+					<QualInsp />
+					<InfoUpd />
+					<PrntPrice />
+					<EstPrice />
+					<Reminder1 />
+					<Reminder2 />
+					<Reminder3 />
+					<OverDlvTol />
+					<UnlimitedDlv />
+					<UnderDlvTol />
+					<ValType />
+					<NoMoreGr>X</NoMoreGr>
+					<FinalInv />
+					<ItemCat />
+					<Acctasscat>X</Acctasscat>
+					<Distrib />
+					<PartInv />
+					<GrInd />
+					<GrNonVal />
+					<IrInd />
+					<FreeItem>X</FreeItem>
+					<GrBasediv />
+					<AcknReqd />
+					<AcknowlNo />
+					<Agreement />
+					<AgmtItem />
+					<Shipping />
+					<Customer />
+					<CondGroup />
+					<NoDisct />
+					<PlanDel />
+					<NetWeight />
+					<Weightunit />
+					<WeightunitIso />
+					<Taxjurcode />
+					<CtrlKey />
+					<ConfCtrl />
+					<RevLev />
+					<Fund />
+					<FundsCtr />
+					<CmmtItem />
+					<Pricedate />
+					<PriceDate1 />
+					<GrossWt />
+					<Volume />
+					<Volumeunit />
+					<VolumeunitIso />
+					<Incoterms1 />
+					<Incoterms2 />
+					<PreVendor />
+					<VendPart />
+					<HlItem />
+					<GrToDate />
+					<SuppVendor />
+					<ScVendor />
+					<KanbanInd />
+					<Ers />
+					<RPromo />
+					<Points />
+					<PointUnit />
+					<PointUnitIso />
+					<Season />
+					<SeasonYr />
+					<BonGrp2 />
+					<BonGrp3 />
+					<SettItem />
+					<Minremlife />
+					<RfqNo />
+					<RfqItem />
+					<PreqNo />
+					<PreqItem />
+					<RefDoc />
+					<RefItem />
+					<SiCat />
+					<RetItem />
+					<AtRelev />
+					<OrderReason />
+					<BrasNbm />
+					<MatlUsage />
+					<MatOrigin />
+					<InHouse />
+					<Indus3 />
+					<InfIndex />
+					<UntilDate />
+					<DelivCompl />
+					<PartDeliv />
+					<ShipBlocked />
+					<PreqName>X</PreqName>
+					<PeriodIndExpirationDate />
+					<IntObjNo />
+					<PckgNo />
+					<Batch />
+					<Vendrbatch>X</Vendrbatch>
+				</SapPordcr101E2bpmepoitemx004>
+				<SapPordcr101E2bpmepoitemx004>
+					<PoItem>00020</PoItem>
+					<PoItemx />
+					<DeleteInd>X</DeleteInd>
+					<ShortText>X</ShortText>
+					<Material />
+					<MaterialExternal />
+					<MaterialGuid />
+					<MaterialVersion />
+					<Ematerial />
+					<EmaterialExternal />
+					<EmaterialGuid />
+					<EmaterialVersion />
+					<Plant>X</Plant>
+					<StgeLoc />
+					<Trackingno />
+					<MatlGroup>X</MatlGroup>
+					<InfoRec />
+					<VendMat>X</VendMat>
+					<Quantity>X</Quantity>
+					<PoUnit>X</PoUnit>
+					<PoUnitIso />
+					<OrderprUn>X</OrderprUn>
+					<OrderprUnIso />
+					<ConvNum1 />
+					<ConvDen1 />
+					<NetPrice>X</NetPrice>
+					<PriceUnit />
+					<GrPrTime />
+					<TaxCode />
+					<BonGrp1 />
+					<QualInsp />
+					<InfoUpd />
+					<PrntPrice />
+					<EstPrice />
+					<Reminder1 />
+					<Reminder2 />
+					<Reminder3 />
+					<OverDlvTol />
+					<UnlimitedDlv />
+					<UnderDlvTol />
+					<ValType />
+					<NoMoreGr>X</NoMoreGr>
+					<FinalInv />
+					<ItemCat />
+					<Acctasscat>X</Acctasscat>
+					<Distrib />
+					<PartInv />
+					<GrInd />
+					<GrNonVal />
+					<IrInd />
+					<FreeItem>X</FreeItem>
+					<GrBasediv />
+					<AcknReqd />
+					<AcknowlNo />
+					<Agreement />
+					<AgmtItem />
+					<Shipping />
+					<Customer />
+					<CondGroup />
+					<NoDisct />
+					<PlanDel />
+					<NetWeight />
+					<Weightunit />
+					<WeightunitIso />
+					<Taxjurcode />
+					<CtrlKey />
+					<ConfCtrl />
+					<RevLev />
+					<Fund />
+					<FundsCtr />
+					<CmmtItem />
+					<Pricedate />
+					<PriceDate1 />
+					<GrossWt />
+					<Volume />
+					<Volumeunit />
+					<VolumeunitIso />
+					<Incoterms1 />
+					<Incoterms2 />
+					<PreVendor />
+					<VendPart />
+					<HlItem />
+					<GrToDate />
+					<SuppVendor />
+					<ScVendor />
+					<KanbanInd />
+					<Ers />
+					<RPromo />
+					<Points />
+					<PointUnit />
+					<PointUnitIso />
+					<Season />
+					<SeasonYr />
+					<BonGrp2 />
+					<BonGrp3 />
+					<SettItem />
+					<Minremlife />
+					<RfqNo />
+					<RfqItem />
+					<PreqNo />
+					<PreqItem />
+					<RefDoc />
+					<RefItem />
+					<SiCat />
+					<RetItem />
+					<AtRelev />
+					<OrderReason />
+					<BrasNbm />
+					<MatlUsage />
+					<MatOrigin />
+					<InHouse />
+					<Indus3 />
+					<InfIndex />
+					<UntilDate />
+					<DelivCompl />
+					<PartDeliv />
+					<ShipBlocked />
+					<PreqName>X</PreqName>
+					<PeriodIndExpirationDate />
+					<IntObjNo />
+					<PckgNo />
+					<Batch />
+					<Vendrbatch>X</Vendrbatch>
+				</SapPordcr101E2bpmepoitemx004>
+				<SapPordcr101E2bpmepoaddrdelivery000>
+					<PoItem>00010</PoItem>
+					<AddrNo />
+					<Formofaddr />
+					<Name>001 CORP</Name>
+					<Name2 />
+					<Name3 />
+					<Name4 />
+					<COName />
+					<City>Charlotte</City>
+					<District />
+					<CityNo />
+					<PostlCod1>28211</PostlCod1>
+					<PostlCod2 />
+					<PostlCod3 />
+					<PoBox />
+					<PoBoxCit />
+					<DelivDis />
+					<Street />
+					<StreetNo />
+					<StrAbbr />
+					<HouseNo />
+					<StrSuppl1 />
+					<StrSuppl2 />
+					<Location />
+					<Building />
+					<Floor />
+					<RoomNo />
+					<Country>US</Country>
+					<Langu />
+					<Region>NC</Region>
+				</SapPordcr101E2bpmepoaddrdelivery000>
+				<SapPordcr101E2bpmepoaddrdelivery000>
+					<PoItem>00020</PoItem>
+					<AddrNo />
+					<Formofaddr />
+					<Name>001 CORP</Name>
+					<Name2 />
+					<Name3 />
+					<Name4 />
+					<COName />
+					<City>Charlotte</City>
+					<District />
+					<CityNo />
+					<PostlCod1>28211</PostlCod1>
+					<PostlCod2 />
+					<PostlCod3 />
+					<PoBox />
+					<PoBoxCit />
+					<DelivDis />
+					<Street />
+					<StreetNo />
+					<StrAbbr />
+					<HouseNo />
+					<StrSuppl1 />
+					<StrSuppl2 />
+					<Location />
+					<Building />
+					<Floor />
+					<RoomNo />
+					<Country>US</Country>
+					<Langu />
+					<Region>NC</Region>
+				</SapPordcr101E2bpmepoaddrdelivery000>
+				<SapPordcr101E2bpmeposchedule002>
+					<PoItem>00010</PoItem>
+					<SchedLine>0001</SchedLine>
+					<DelDatcatExt>D</DelDatcatExt>
+					<DeliveryDate>04/28/2015</DeliveryDate>
+					<Quantity>1.0</Quantity>
+				</SapPordcr101E2bpmeposchedule002>
+				<SapPordcr101E2bpmeposchedule002>
+					<PoItem>00020</PoItem>
+					<SchedLine>0001</SchedLine>
+					<DelDatcatExt>D</DelDatcatExt>
+					<DeliveryDate>04/28/2015</DeliveryDate>
+					<Quantity>1.0</Quantity>
+				</SapPordcr101E2bpmeposchedule002>
+				<SapPordcr101E2bpmeposchedulx002>
+					<PoItem>00010</PoItem>
+					<SchedLine>0001</SchedLine>
+					<PoItemx>X</PoItemx>
+					<SchedLinex>X</SchedLinex>
+					<DelDatcatExt>X</DelDatcatExt>
+					<DeliveryDate>X</DeliveryDate>
+					<Quantity>X</Quantity>
+				</SapPordcr101E2bpmeposchedulx002>
+				<SapPordcr101E2bpmeposchedulx002>
+					<PoItem>00020</PoItem>
+					<SchedLine>0001</SchedLine>
+					<PoItemx>X</PoItemx>
+					<SchedLinex>X</SchedLinex>
+					<DelDatcatExt>X</DelDatcatExt>
+					<DeliveryDate>X</DeliveryDate>
+					<Quantity>X</Quantity>
+				</SapPordcr101E2bpmeposchedulx002>
+				<SapPordcr101E2bpmepoaccount002>
+					<PoItem>00010</PoItem>
+					<SerialNo>1</SerialNo>
+					<DeleteInd />
+					<CreatDate />
+					<Quantity />
+					<DistrPerc />
+					<NetValue />
+					<GlAccount>0000640010</GlAccount>
+					<BusArea />
+					<Costcenter>084-20601</Costcenter>
+					<SdDoc />
+					<ItmNumber />
+					<SchedLine />
+					<AssetNo />
+					<SubNumber />
+					<Orderid />
+					<GrRcpt />
+					<UnloadPt />
+					<CoArea>CCB</CoArea>
+				</SapPordcr101E2bpmepoaccount002>
+				<SapPordcr101E2bpmepoaccount002>
+					<PoItem>00020</PoItem>
+					<SerialNo>1</SerialNo>
+					<DeleteInd />
+					<CreatDate />
+					<Quantity />
+					<DistrPerc />
+					<NetValue />
+					<GlAccount>0000640010</GlAccount>
+					<BusArea />
+					<Costcenter>084-20601</Costcenter>
+					<SdDoc />
+					<ItmNumber />
+					<SchedLine />
+					<AssetNo />
+					<SubNumber />
+					<Orderid />
+					<GrRcpt />
+					<UnloadPt />
+					<CoArea>CCB</CoArea>
+				</SapPordcr101E2bpmepoaccount002>
+				<SapPordcr101E2bpmepoaccountx003>
+					<PoItem>00010</PoItem>
+					<SerialNo>1</SerialNo>
+					<PoItemx>X</PoItemx>
+					<SerialNox>X</SerialNox>
+					<DeleteInd />
+					<CreatDate />
+					<Quantity>X</Quantity>
+					<DistrPerc>X</DistrPerc>
+					<NetValue />
+					<GlAccount>X</GlAccount>
+					<BusArea />
+					<Costcenter>X</Costcenter>
+					<SdDoc />
+					<ItmNumber />
+					<SchedLine />
+					<AssetNo />
+					<SubNumber />
+					<Orderid />
+					<GrRcpt />
+					<UnloadPt />
+					<CoArea>X</CoArea>
+				</SapPordcr101E2bpmepoaccountx003>
+				<SapPordcr101E2bpmepoaccountx003>
+					<PoItem>00020</PoItem>
+					<SerialNo>1</SerialNo>
+					<PoItemx>X</PoItemx>
+					<SerialNox>X</SerialNox>
+					<DeleteInd />
+					<CreatDate />
+					<Quantity>X</Quantity>
+					<DistrPerc>X</DistrPerc>
+					<NetValue />
+					<GlAccount>X</GlAccount>
+					<BusArea />
+					<Costcenter>X</Costcenter>
+					<SdDoc />
+					<ItmNumber />
+					<SchedLine />
+					<AssetNo />
+					<SubNumber />
+					<Orderid />
+					<GrRcpt />
+					<UnloadPt />
+					<CoArea>X</CoArea>
+				</SapPordcr101E2bpmepoaccountx003>
+				<SapPordcr101E2bpmepotext000>
+					<PoNumber>1000035279</PoNumber>
+					<PoItem>00010</PoItem>
+					<TextId>F01</TextId>
+					<TextForm />
+					<TextLine>NEW Coke Contour PET BLACK Recycle Center (bottles and Cans)- made out of 100% post consumer waste material--this means that this tr</TextLine>
+				</SapPordcr101E2bpmepotext000>
+				<SapPordcr101E2bpmepotext000>
+					<PoNumber>1000035279</PoNumber>
+					<PoItem>00020</PoItem>
+					<TextId>F01</TextId>
+					<TextForm />
+					<TextLine>Dasani PET BLACK Recycle Center (bottles and Cans)- made out of 100% post consumer waste material; Includes Dasani 2011 graphic wrap</TextLine>
+				</SapPordcr101E2bpmepotext000>
+			</SapPordcr101E2pordcr1001>
+		</SapPordcr101DataRecord>
+	</SapPordcr101IDocBO>
+</NS1:SapPordcr101>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.w3schools.com/webservices/FahrenheitToCelsius"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/></con:soapui-project>
